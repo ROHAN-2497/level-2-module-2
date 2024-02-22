@@ -5,4 +5,4 @@ const names = ["rohan", "raihan", 36, true]
 const boyfriends: [string, boolean] = ['abul', true]
 
 // 2 -->
-const user: [number, string, Boolean] = [121, "abul", false]
+const users: [number, string, Boolean] = [121, "abul", false]
