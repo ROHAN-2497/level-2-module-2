@@ -12,3 +12,4 @@ const greetFriend = (...friendss: string[]): void =>
     console.log(`Hi ${frnd}`);
   });
 greetFriend("kashem", "hashem", "gashem", "bangla bhai", "english bhai", "dj bhai");
+
