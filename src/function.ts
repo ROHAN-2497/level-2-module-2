@@ -7,9 +7,14 @@ console.log(myFriends);
 
 // rest parameter
 
-const greetFriends = (
-  friend1: string,
-  friend2: string,
-  friend3: string
-): void => console.log(`hi ${friend1}\n hi ${friend2}\n hi${friend3}`);
-greetFriends("kashem", "hashem", "gashem");
+// const greetFriends = (...friends: string[]): void =>
+//   friends.forEach((friend) => {
+//     console.log(`Hi ${friend}`);
+//   });
+
+// greetFriends("kashem", "hashem", "gashem", "bangla bhai", "english bhai");
+const greetFriend = (...friendss: string[]): void =>
+  friendss.forEach((frnd) => {
+    console.log(`Hi ${frnd}`);
+  });
+greetFriend("kashem", "hashem", "gashem", "bangla bhai", "english bhai", "dj bhai");
