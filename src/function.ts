@@ -7,12 +7,6 @@ console.log(myFriends);
 
 // rest parameter
 
-// const greetFriends = (...friends: string[]): void =>
-//   friends.forEach((friend) => {
-//     console.log(`Hi ${friend}`);
-//   });
-
-// greetFriends("kashem", "hashem", "gashem", "bangla bhai", "english bhai");
 const greetFriend = (...friendss: string[]): void =>
   friendss.forEach((frnd) => {
     console.log(`Hi ${frnd}`);
