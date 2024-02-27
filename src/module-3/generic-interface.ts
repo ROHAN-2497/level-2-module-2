@@ -5,6 +5,24 @@ interface CrushInterface<T, W = null> {
   husband: T;
   wife?: W;
 }
+
+interface PersonInterface {
+  name: string;
+  age: number;
+}
+
+const crush5: CrushInterface<PersonInterface, PersonInterface> = {
+  name: "kate",
+  husband: {
+    name: "petter",
+    age: 40,
+  },
+  wife: {
+    name: "jacky",
+    age: 30,
+  },
+};
+
 const crush: CrushInterface<Boolean, string> = {
   name: "kate windson",
   husband: true,
