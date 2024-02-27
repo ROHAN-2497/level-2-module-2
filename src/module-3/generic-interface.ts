@@ -1,23 +1,26 @@
 // GENERIC INTERFACE
 
-interface CrushInterface<T> {
+interface CrushInterface<T, W = null> {
   name: string;
   husband: T;
+  wife?: W;
 }
-const crush: CrushInterface<Boolean> = {
+const crush: CrushInterface<Boolean, string> = {
   name: "kate windson",
   husband: true,
+  wife: "chhokina",
 };
-const crush1: CrushInterface<string> = {
+const crush1: CrushInterface<string, null> = {
   name: "kate windson",
   husband: "petter parker",
 };
 
-const cursh3: CrushInterface<object> = {
+const cursh3: CrushInterface<object, boolean> = {
   name: "kate windson",
   husband: {
     name: "parker",
   },
+  wife: true,
 };
 
 interface objectInterface {
@@ -25,7 +28,7 @@ interface objectInterface {
   age: number;
 }
 
-const crush4: CrushInterface<objectInterface> = {
+const crush4: CrushInterface<objectInterface, undefined> = {
   name: "kate windson",
   husband: {
     name: true,
