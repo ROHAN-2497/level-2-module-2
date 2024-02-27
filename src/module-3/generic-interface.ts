@@ -5,8 +5,32 @@ interface CrushInterface<T> {
   husband: T;
 }
 const crush: CrushInterface<Boolean> = {
-  name: "kate widnson",
+  name: "kate windson",
   husband: true,
+};
+const crush1: CrushInterface<string> = {
+  name: "kate windson",
+  husband: "petter parker",
+};
+
+const cursh3: CrushInterface<object> = {
+  name: "kate windson",
+  husband: {
+    name: "parker",
+  },
+};
+
+interface objectInterface {
+  name: boolean;
+  age: number;
+}
+
+const crush4: CrushInterface<objectInterface> = {
+  name: "kate windson",
+  husband: {
+    name: true,
+    age: 34,
+  },
 };
 
 type GenericTuple<X, Y> = [X, Y];
