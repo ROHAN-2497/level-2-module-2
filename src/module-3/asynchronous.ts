@@ -1,3 +1,32 @@
+// JSON PLACE HOLDER
+interface ITodoData {
+  userId: number;
+  id: number;
+  title: string;
+  completed: boolean;
+}
+
+const getTodo = async (): Promise<ITodoData> => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  return res.json();
+};
+
+const getTodoData = async (): Promise<void> => {
+  const data = await getTodo();
+  console.log(data);
+};
+getTodoData();
+// const getTodo = async (): Promise<ITodoData> => {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+//   return await res.json();
+// };
+
+// const getTodoData = async (): Promise<void> => {
+//   const data = await getTodo();
+//   console.log(data);
+// };
+// getTodoData();
+
 // MOCKING
 
 const makePromise = (): Promise<string> => {
