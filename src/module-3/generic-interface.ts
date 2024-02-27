@@ -12,8 +12,12 @@ const crush: CrushInterface<Boolean> = {
 type GenericTuple<X, Y> = [X, Y];
 const realatin: GenericTuple<string, string> = ["rohan", "oishy"];
 
-type NameAndSalaryType = { name: string; salary: number };
-const realationWithSalary: GenericTuple<NameAndSalaryType, string> = [
+// type NameAndSalaryType = { name: string; salary: number };
+interface NameAndSalaryInterface {
+  name: string;
+  salary: number;
+}
+const realationWithSalary: GenericTuple<NameAndSalaryInterface, string> = [
   {
     name: "rohan",
     salary: 1000000,
