@@ -35,3 +35,34 @@ const user2: AdminUserType = { name: "Mr. Y", role: "admin" };
 
 console.log(getUser(user1));
 console.log(getUser(user2));
+
+// instace of gurd
+
+class Animals {
+  name: string;
+  species: string;
+  constructor(name: string, species: string) {
+    this.name = name;
+    this.species = species;
+  }
+  making() {
+    console.log("I am making Sound");
+  }
+}
+
+class Dog extends Animals {
+  constructor(name: string, species: string) {
+    super(name, species);
+  }
+  DogMakingSound() {
+    console.log("Dog Making a BArking");
+  }
+}
+class Cat extends Animals {
+  constructor(name: string, species: string) {
+    super(name, species);
+  }
+  CatMakingSound() {
+    console.log("cat making Meaw Meaw");
+  }
+}
