@@ -1,10 +1,25 @@
 const arrayOfNumbers = [1, 2, 3, 4, 5];
 const arrayOfStrig = arrayOfNumbers.map((number) => number.toString());
 console.log(arrayOfStrig);
-type AreaNumber = {
+
+type Volume = {
   height: number;
-  width: number;
+  width: string;
+  depth: number;
 };
+
+type Area<T> = {
+  //   [key in keyof Volume]: Volume[key];
+  readonly [key in keyof T]: T[key];
+};
+
+const area1: Area<{ height: number; width: number }> = {
+  height: 10,
+  width: 81,
+};
+
+area1;
+
 type AreaString = {
   height: string;
   width: string;
