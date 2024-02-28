@@ -36,7 +36,7 @@ const user2: AdminUserType = { name: "Mr. Y", role: "admin" };
 console.log(getUser(user1));
 console.log(getUser(user2));
 
-// instace of gurd
+// instance of gurd
 
 class Animals {
   name: string;
@@ -66,3 +66,17 @@ class Cat extends Animals {
     console.log("cat making Meaw Meaw");
   }
 }
+
+function getAnimal(animal: Animals) {
+  if (animal instanceof Dog) {
+    animal.DogMakingSound();
+  } else if (animal instanceof Cat) {
+    animal.CatMakingSound();
+  } else {
+    animal.making();
+  }
+}
+
+const animal1 = new Dog("garman Bhai", "Dog"); // instance of Dog
+const animal2 = new Cat("parsian Bhai", "Cat"); // instance of Cat
+getAnimal(animal2);
