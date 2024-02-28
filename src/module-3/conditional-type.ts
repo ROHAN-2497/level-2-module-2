@@ -17,6 +17,6 @@ type CheakWife = cheakProperty<Sheikh, "wife1">;
 
 type Bandhobi = "monika" | "rechel" | "pheobe";
 
-type RemoveBandhobi<T> = T extends "rechel" ? never : T;
+type RemoveBandhobi<T, K> = T extends K ? never : T;
 
-type Result = RemoveBandhobi<Bandhobi>;
+type Result = RemoveBandhobi<Bandhobi, "monica">;
