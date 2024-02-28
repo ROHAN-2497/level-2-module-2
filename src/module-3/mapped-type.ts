@@ -37,5 +37,5 @@ const reactAngularArea: ReadOnly = {
 
 reactAngularArea;
 
-type A1 = AreaNumber["height"]; // LOOK UP TYPES
-type b1 = keyof AreaNumber;
+// type A1 = AreaNumber["height"]; // LOOK UP TYPES
+// type b1 = keyof AreaNumber;
