@@ -15,6 +15,19 @@ interface IVehicle {
   moveEngine(): void;
 }
 
-class Vehicle {}
+class Vehicle implements IVehicle {
+  startEngine(): void {
+    console.log("this is start engine");
+  }
+  stopEngine(): void {
+    console.log("this is stop engine");
+  }
+  moveEngine(): void {
+    console.log("this is move engine");
+  }
+  test() {
+    console.log("I am testing for purpose");
+  }
+}
 
 // ABSTRACT CLASS
