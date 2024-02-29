@@ -15,4 +15,6 @@ interface IVehicle {
   moveEngine(): void;
 }
 
+class Vehicle {}
+
 // ABSTRACT CLASS
