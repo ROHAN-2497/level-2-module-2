@@ -27,3 +27,19 @@ type User = Omit<Person2, "name" | "address">;
 // To make all the Properties be optional type
 type Optional = Partial<Person2>;
 type Requireds = Required<Person2>;
+
+//  ReadOnly and  using Index Signature
+
+type users = {
+  [key: string]: string;
+};
+const collection: Readonly<users> = {
+  name: "rohan",
+  age: "22",
+  rollNumber: "36",
+};
+
+const IndexSignature: users = {
+  address: "wewe",
+};
+// collection.age = 32;
