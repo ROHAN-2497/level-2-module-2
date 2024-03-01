@@ -4,7 +4,7 @@
 
 interface Person {
   name: string;
-  email: string;
+  email?: string;
   contactNo: string;
 }
 
@@ -21,3 +21,9 @@ type Person2 = {
 };
 
 type User = Omit<Person2, "name" | "address">;
+
+// Partial And Required
+
+// To make all the Properties be optional type
+type Optional = Partial<Person2>;
+type Requireds = Required<Person2>;
